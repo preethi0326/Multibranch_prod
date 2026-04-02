@@ -1,5 +1,5 @@
 pipeline{
-  agent {label 'server1'}
+  agent any
   parameters{
     string(name:'SOURCE_FILE' , description:'Enter your webpage file' , defaultValue:'index.html')
     string(name:'DESTINATION_FILE', description:'Enter your path', defaultValue:'index.nginx-debian.html')
